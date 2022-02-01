@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         var title: String
         
-        if sender.tag == correctAnswer { 
+        if sender.tag == correctAnswer {
             title = "Correto"
             score += 1
         } else {
