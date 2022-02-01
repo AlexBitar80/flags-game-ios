@@ -42,10 +42,10 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
-        askQuestion()
+        askQuestion(action: nil)
     }
     
-    func askQuestion() {
+    func askQuestion(action: UIAlertAction!) {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         
@@ -54,6 +54,22 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         title = countries[correctAnswer].uppercased()
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        var title: String
+        
+        if sender.tag == correctAnswer { 
+            title = "Correto"
+            score += 1
+        } else {
+            title = "Errado"
+            score -= 1
+        }
+        
+        let ac = UIAlertController(title: title, message: "Sua pontuação é de \(score).", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continuar", style: .default, handler: askQuestion))
+        present(ac, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
