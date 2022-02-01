@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mpo-QU-E9D">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,38 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7h-M2-2sY">
-                                <rect key="frame" x="95" y="100" width="224" height="114"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-dH-w7T">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxm-QF-I6I">
-                                <rect key="frame" x="95" y="244" width="224" height="114"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-Gq-H3c">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uH-C5-Qyj">
-                                <rect key="frame" x="95" y="388" width="224" height="114"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsE-Mj-uah">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kxm-QF-I6I" firstAttribute="top" secondItem="X7h-M2-2sY" secondAttribute="bottom" constant="30" id="2qY-9j-dd2"/>
-                            <constraint firstItem="8uH-C5-Qyj" firstAttribute="top" secondItem="kxm-QF-I6I" secondAttribute="bottom" constant="30" id="5kn-Vi-bh7"/>
-                            <constraint firstItem="8uH-C5-Qyj" firstAttribute="centerX" secondItem="kxm-QF-I6I" secondAttribute="centerX" id="PzQ-Wl-6KA"/>
-                            <constraint firstItem="kxm-QF-I6I" firstAttribute="centerX" secondItem="X7h-M2-2sY" secondAttribute="centerX" id="Y9h-6y-G7Y"/>
-                            <constraint firstItem="X7h-M2-2sY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dOW-qd-IJE"/>
-                            <constraint firstItem="X7h-M2-2sY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="kjX-nV-pal"/>
+                            <constraint firstItem="5hm-Gq-H3c" firstAttribute="top" secondItem="GIu-dH-w7T" secondAttribute="bottom" constant="30" id="H4D-B0-vgM"/>
+                            <constraint firstItem="GIu-dH-w7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="WWB-yp-y1l"/>
+                            <constraint firstItem="vsE-Mj-uah" firstAttribute="top" secondItem="5hm-Gq-H3c" secondAttribute="bottom" constant="30" id="o0d-dp-ixY"/>
+                            <constraint firstItem="GIu-dH-w7T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o9C-gE-sfc"/>
+                            <constraint firstItem="vsE-Mj-uah" firstAttribute="centerX" secondItem="5hm-Gq-H3c" secondAttribute="centerX" id="ozu-Mp-t9j"/>
+                            <constraint firstItem="5hm-Gq-H3c" firstAttribute="centerX" secondItem="GIu-dH-w7T" secondAttribute="centerX" id="ynz-b8-BEN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fFE-PW-5lz"/>
                     <connections>
-                        <outlet property="button1" destination="X7h-M2-2sY" id="k1J-A4-dAU"/>
-                        <outlet property="button2" destination="kxm-QF-I6I" id="lRb-h8-gHW"/>
-                        <outlet property="button3" destination="8uH-C5-Qyj" id="QKN-SZ-zfA"/>
+                        <outlet property="button1" destination="GIu-dH-w7T" id="Xzb-vW-gGZ"/>
+                        <outlet property="button2" destination="5hm-Gq-H3c" id="A2s-IG-L4a"/>
+                        <outlet property="button3" destination="vsE-Mj-uah" id="LU8-xK-Ue2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
