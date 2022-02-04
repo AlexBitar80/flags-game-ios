@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
+    var questionsAnswered = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = countries[correctAnswer].uppercased()
+        title = "\(countries[correctAnswer].uppercased()) pontuação atual \(score)"
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -63,13 +64,32 @@ class ViewController: UIViewController {
             title = "Correto"
             score += 1
         } else {
-            title = "Errado"
+            title = """
+                Resposta errada!
+            
+                Está é a bandeira de
+                \(countries[sender.tag].uppercased()) :(
+            """
             score -= 1
         }
         
-        let ac = UIAlertController(title: title, message: "Sua pontuação é de \(score).", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continuar", style: .default, handler: askQuestion))
-        present(ac, animated: true)
+        questionsAnswered += 1
+        
+        if questionsAnswered < 10 {
+            var ac = UIAlertController(title: title, message: "Sua pontuação agora é de \(score).", preferredStyle: .alert)
+            
+            ac.addAction(UIAlertAction(title: "Continuar", style: .default, handler: askQuestion))
+            
+            present(ac, animated: true)
+        } else {
+            var ac = UIAlertController(title: title, message: "Sua pontuação final é de \(score). Parabéns!", preferredStyle: .alert)
+        
+            ac.addAction(UIAlertAction(title: "Tentar novamente", style: .default, handler: askQuestion))
+                         
+            present(ac, animated: true)
+            
+            score = 0
+        }
     }
     
     override func didReceiveMemoryWarning() {
