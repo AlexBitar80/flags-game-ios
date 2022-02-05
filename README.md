@@ -31,6 +31,6 @@ o game consiste em escolher a bandeira correta e com base nisso ir aumentando su
 
 Para clonar e rodar esse projeto você vai precisar de uma máquina com sistema [macOS](https://www.apple.com/br/macos/monterey/) e do [Xcode](https://developer.apple.com/xcode/)
 
-visualizar o projeto funcionando: [clique aqui](https://www.youtube.com/watch?v=ygxC0KHAjoM)
+<!-- visualizar o projeto funcionando: [clique aqui]() -->
 
 👋🏻 Até a próxima!
