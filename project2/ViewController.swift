@@ -89,6 +89,7 @@ class ViewController: UIViewController {
             present(ac, animated: true)
             
             score = 0
+            questionsAnswered = 0
         }
     }
     
