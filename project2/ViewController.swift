@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var countries = [String]()
     var score = 0
@@ -54,7 +55,9 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = "\(countries[correctAnswer].uppercased()) pontuação atual \(score)"
+        title = "pontuação atual \(score)"
+        
+        titleLabel.text = "Selecione a bandeira de \(countries[correctAnswer].uppercased())"
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -76,13 +79,13 @@ class ViewController: UIViewController {
         questionsAnswered += 1
         
         if questionsAnswered < 10 {
-            var ac = UIAlertController(title: title, message: "Sua pontuação agora é de \(score).", preferredStyle: .alert)
+            let ac = UIAlertController(title: title, message: "Sua pontuação agora é de \(score).", preferredStyle: .alert)
             
             ac.addAction(UIAlertAction(title: "Continuar", style: .default, handler: askQuestion))
             
             present(ac, animated: true)
         } else {
-            var ac = UIAlertController(title: title, message: "Sua pontuação final é de \(score). Parabéns!", preferredStyle: .alert)
+            let ac = UIAlertController(title: title, message: "Sua pontuação final é de \(score). Parabéns!", preferredStyle: .alert)
         
             ac.addAction(UIAlertAction(title: "Tentar novamente", style: .default, handler: askQuestion))
                          
