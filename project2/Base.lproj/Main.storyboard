@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-dH-w7T">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="us"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc5-qj-Ame"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hm-Gq-H3c">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <rect key="frame" x="107" y="355" width="200" height="100"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -33,23 +26,40 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsE-Mj-uah">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <rect key="frame" x="107" y="485" width="200" height="100"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kO2-QT-gig"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione a bandeira de nigeria" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiL-PR-Pk9">
+                                <rect key="frame" x="75.333333333333343" y="130" width="263.66666666666663" height="23"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-dH-w7T">
+                                <rect key="frame" x="107" y="225" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc5-qj-Ame"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="lightBlue"/>
                         <constraints>
-                            <constraint firstItem="5hm-Gq-H3c" firstAttribute="top" secondItem="GIu-dH-w7T" secondAttribute="bottom" constant="30" id="H4D-B0-vgM"/>
-                            <constraint firstItem="GIu-dH-w7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="WWB-yp-y1l"/>
-                            <constraint firstItem="vsE-Mj-uah" firstAttribute="top" secondItem="5hm-Gq-H3c" secondAttribute="bottom" constant="30" id="o0d-dp-ixY"/>
-                            <constraint firstItem="GIu-dH-w7T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o9C-gE-sfc"/>
-                            <constraint firstItem="vsE-Mj-uah" firstAttribute="centerX" secondItem="5hm-Gq-H3c" secondAttribute="centerX" id="ozu-Mp-t9j"/>
-                            <constraint firstItem="5hm-Gq-H3c" firstAttribute="centerX" secondItem="GIu-dH-w7T" secondAttribute="centerX" id="ynz-b8-BEN"/>
+                            <constraint firstItem="GIu-dH-w7T" firstAttribute="top" secondItem="aiL-PR-Pk9" secondAttribute="bottom" constant="72" id="JUa-rU-Bje"/>
+                            <constraint firstItem="aiL-PR-Pk9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="Ll3-c4-daY"/>
+                            <constraint firstItem="5hm-Gq-H3c" firstAttribute="top" secondItem="GIu-dH-w7T" secondAttribute="bottom" constant="30" id="PdM-uY-NgO"/>
+                            <constraint firstItem="aiL-PR-Pk9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XfY-dE-jfk"/>
+                            <constraint firstItem="GIu-dH-w7T" firstAttribute="centerX" secondItem="aiL-PR-Pk9" secondAttribute="centerX" id="hAX-1A-hXJ"/>
+                            <constraint firstItem="5hm-Gq-H3c" firstAttribute="centerX" secondItem="GIu-dH-w7T" secondAttribute="centerX" id="hkV-ZZ-DJD"/>
+                            <constraint firstItem="vsE-Mj-uah" firstAttribute="top" secondItem="5hm-Gq-H3c" secondAttribute="bottom" constant="30" id="kla-jd-EuG"/>
+                            <constraint firstItem="vsE-Mj-uah" firstAttribute="centerX" secondItem="5hm-Gq-H3c" secondAttribute="centerX" id="pD2-WX-avg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fFE-PW-5lz"/>
@@ -57,6 +67,7 @@
                         <outlet property="button1" destination="GIu-dH-w7T" id="Xzb-vW-gGZ"/>
                         <outlet property="button2" destination="5hm-Gq-H3c" id="A2s-IG-L4a"/>
                         <outlet property="button3" destination="vsE-Mj-uah" id="LU8-xK-Ue2"/>
+                        <outlet property="titleLabel" destination="aiL-PR-Pk9" id="CS0-3K-rYL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,5 +104,11 @@
         <namedColor name="lightBlue">
             <color red="0.67843137254901964" green="0.90980392156862744" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
