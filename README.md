@@ -1,8 +1,5 @@
 # Flags Game IOS
 <br />
-<p align="center">
-  
-</p>
 
 <p align="center">
   <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/AlexBitar80/flags-game-ios?style=social">
@@ -18,6 +15,10 @@
 
 Este foi o projeto 3 do programa [100 days with Swift](https://www.hackingwithswift.com/learn), onde desenvolvemos um minigame para consolidar o que apredemos sobre **Swift**. 
 o game consiste em escolher a bandeira correta e com base nisso ir aumentando sua pontuação.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/56983783/152686670-0c36f046-bdb4-4693-944f-e6f2ef5a7bbf.png" alt="app"/>
+</p>
 
 #### O que foi abordado dentro desse projeto:
 
